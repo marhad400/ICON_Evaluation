@@ -17,7 +17,7 @@ Name: Mark Haddad
 
 Email: mahaddad@cpp.edu, markhaddad03@gmail.com
 
-Project you are applying for: Any project
+Project you are applying for: Summer Internship
 
 
 ---
@@ -103,25 +103,25 @@ What is one major role of systemd?
 
 Which of these network architectures would be best suited for processing text?
  - Convolution Neural Network
- - Recurrent Neural Network
+ > - Recurrent Neural Network
  - Multilayer Perceptron
  - U-Net
 
 
 What is one solution to the vanishing gradient problem in backprop?
-
+> This is related to a gradient descent algorithm, where it never converges to the local minimum. I have basic knowledge on implementing gradient descent, but I believe to solve vanishing in gradient descent you can change the weight initialization in your formula to adjust the learning rate so it can converge. (Just started the Machine Learning course Max recommended me a while back!)
 
 What is the traditional flow of interactions for a reinforcement learning agent?
  - Read the current state, take an action, environment updates state
- - Make a prediction, evaluate the loss from a target, update model with backprop
+ > - Make a prediction, evaluate the loss from a target, update model with backprop
  - Generate result, compare result to similar objects of the class, improve discriminator and predictor
 
 
 Briefly describe either branch and bound or dynamic programming:
-
+> Dynamic programming is a conceptual way of programming in which a problem can be optimized by breaking into sub-problems and storing previously recorded data to skip iterations.
 
 What is the main challenge with implementing A*:
- - Picking the correct heuristic
+ > - Picking the correct heuristic
  - Initialization parameters
  - Solution will not converge
  - Too long of an execution compared to other common pathfinders
