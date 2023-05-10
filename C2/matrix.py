@@ -36,7 +36,7 @@ class MatrixOps:
         for row in range(1, output_height):
             for col in range(1, output_width):
                 submatrix = padded_matrix[row-1:row+2, col-1:col+2]
-                output_matrix[row][col] = np.sum(np.multiply(submatrix, kernel))
+                output_matrix[row][col] = np.sum(submatrix * kernel)
 
         return output_matrix
 
