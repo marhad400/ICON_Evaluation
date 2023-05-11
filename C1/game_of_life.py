@@ -24,12 +24,13 @@ class Game:
                 neighbors = np.sum(self._board[i-1:i+2, j-1:j+2]) - self._board[i][j]
                 
                 # Game logic
-                if self._board[i][j] == 1 and (neighbors < 2 or neighbors > 3):
-                    board[i][j] = 0
-                elif self._board[i][j] == 1 and (2 <= neighbors <= 3):
-                    board[i][j] = 1
+                if self._board[i][j] == 1: 
+                    if neighbors < 2 or neighbors > 3:
+                        board[i][j] = 0
+                    elif 2 <= neighbors <= 3:
+                        board[i][j] = 1
                 else:
-                    if neighbors == 3 and self._board[i][j] == 0:
+                    if neighbors == 3:
                         board[i][j] = 1
                     
         self._board = board
